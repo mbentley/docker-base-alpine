@@ -19,15 +19,13 @@ The following is a list of multi-arch (`amd64`, `arm64`, `armv7`) tags for each 
 | Alpine | `alpine:3.13` | `mbentley/alpine:3.13` |
 | Alpine | `alpine:3.12` | `mbentley/alpine:3.12` |
 | Alpine | `alpine:3.11` | `mbentley/alpine:3.11` |
-| Alpine | `alpine:3.10` | `mbentley/alpine:3.10` |
-| Alpine | `alpine:3.9` | `mbentley/alpine:3.9` |
 
 ## Re-Building the Images
 
 ### Alpine
 
 ``` bash
-for VERSION in 3.15 3.14 3.13 3.12 3.11 3.10 3.9
+for VERSION in 3.15 3.14 3.13 3.12 3.11
 do
   docker build --pull --build-arg IMAGE_TAG="${VERSION}" -t "mbentley/alpine:${VERSION}" -f Dockerfile.alpine .
 done
