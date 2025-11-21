@@ -14,6 +14,7 @@ The following is a list of multi-arch (`amd64`, `arm64`, `armv7`) tags for each 
 
 | Distro | Base Image | Rebased Image |
 | ------ | ---------- | ------------- |
+| Alpine | `alpine:edge` | `mbentley/alpine:edge` |
 | Alpine | `alpine:latest`<br>`alpine:3.22` | `mbentley/alpine:latest`<br>`mbentley/alpine:3.22` |
 | Alpine | `alpine:3.21` | `mbentley/alpine:3.21` |
 | Alpine | `alpine:3.20` | `mbentley/alpine:3.20` |
