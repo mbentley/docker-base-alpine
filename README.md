@@ -15,15 +15,16 @@ The following is a list of multi-arch (`amd64`, `arm64`, `armv7`) tags for each 
 | Distro | Base Image | Rebased Image |
 | ------ | ---------- | ------------- |
 | Alpine | `alpine:edge` | `mbentley/alpine:edge` |
-| Alpine | `alpine:latest`<br>`alpine:3.22` | `mbentley/alpine:latest`<br>`mbentley/alpine:3.22` |
+| Alpine | `alpine:latest`<br>`alpine:3.23` | `mbentley/alpine:latest`<br>`mbentley/alpine:3.23` |
+| Alpine | `alpine:3.22` | `mbentley/alpine:3.22` |
 | Alpine | `alpine:3.21` | `mbentley/alpine:3.21` |
 | Alpine | `alpine:3.20` | `mbentley/alpine:3.20` |
-| Alpine | `alpine:3.19` | `mbentley/alpine:3.19` |
 
 ## Archived Tags
 
 | Distro | Base Image | Rebased Image |
 | ------ | ---------- | ------------- |
+| Alpine | `alpine:3.19` | `mbentley/alpine:3.19` |
 | Alpine | `alpine:3.18` | `mbentley/alpine:3.18` |
 | Alpine | `alpine:3.17` | `mbentley/alpine:3.17` |
 | Alpine | `alpine:3.17` | `mbentley/alpine:3.17` |
@@ -39,7 +40,7 @@ The following is a list of multi-arch (`amd64`, `arm64`, `armv7`) tags for each 
 ### Alpine
 
 ``` bash
-for VERSION in 3.22 3.21 3.20 3.19
+for VERSION in 3.23 3.22 3.21 3.20
 do
   docker build --pull --build-arg IMAGE_TAG="${VERSION}" -t "mbentley/alpine:${VERSION}" -f Dockerfile.alpine .
 done
